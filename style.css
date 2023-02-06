@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+    background-color: var(--winning-blocks);
+}
+h1{
+
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transform: 300ms;
+
+}
+h1:hover{
+  transform: translateY(-5px);
+}
+.container
+{  
+    padding: 60px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #2d414b;
+    border-color:var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600px;
+    
+
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+ #gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+   
+} 
+
+ .box{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    border-right:2px solid ;
+    border-bottom: 2px solid;
+} 
+.box:nth-child(3n)
+{
+    border-right: none;
+}
+.box:nth-child(7) 
+{
+    border-bottom: none;
+}
+.box:nth-child(8) 
+{
+    border-bottom: none;
+}
+.box:nth-child(9) 
+{
+    border-bottom: none;
+}
